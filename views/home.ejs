@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Solutions</title>
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+<body class="bg-base-200">
+
+  <%- include('partials/navbar', { page: '/' }) %>
+
+  <div class="container mx-auto p-6">
+    <div class="hero bg-base-300 mb-8 rounded-lg">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Explore Climate Projects</h1>
+          <p class="py-6">Learn how different sectors are helping combat climate change.</p>
+          <a href="/solutions/projects" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="https://drawdown.org/sites/default/files/solutions/solution_farmlandrestoration01.jpg" alt="Project 1" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Abandoned Farmland Restoration</h2>
+          <p>Restoration can bring degraded farmland back into productivity and sequester carbon.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/1" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="https://drawdown.org/sites/default/files/solutions2020/solution_alternativecement02.jpg" alt="Project 2" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Alternative Cement</h2>
+          <p>Reformulation can reduce emissions by millions of metric tons each year.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/2" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="https://drawdown.org/sites/default/files/solutions2020/solution_bicycle_infrastructure.jpg" alt="Project 3" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Bicycle Infrastructure</h2>
+          <p>Infrastructure supports safe and abundant bicycle use, reducing emissions.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/3" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
