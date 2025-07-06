@@ -15,5 +15,6 @@
       "src": "/(.*)",
       "dest": "/server.js"
     }
-  ]
+  ],
+  "buildCommand": "npm run tw:build"
 }

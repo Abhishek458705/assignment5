@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "tw:build": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css --minify"
+    "tw:build": "npx tailwindcss -i ./tailwind.css -o ./public/css/main.css --minify"
   },
   "author": "Abishek",
   "license": "ISC",
