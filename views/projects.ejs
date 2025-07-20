@@ -30,7 +30,7 @@
             <th>Title</th>
             <th>Sector</th>
             <th>Summary</th>
-            <th>Details</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -38,13 +38,15 @@
             <tr>
               <td><%= p.title %></td>
               <td>
-                <a class="btn btn-sm" href="/solutions/projects?sector=<%= encodeURIComponent(p.sector) %>">
-                  <%= p.sector %>
+                <a class="btn btn-sm" href="/solutions/projects?sector=<%= encodeURIComponent(p.Sector?.sector_name || '') %>">
+                  <%= p.Sector?.sector_name || 'N/A' %>
                 </a>
               </td>
               <td><%= p.summary_short %></td>
-              <td>
+              <td class="flex flex-wrap gap-2">
                 <a class="btn btn-sm btn-info" href="/solutions/projects/<%= p.id %>">Details</a>
+                <a class="btn btn-sm btn-success" href="/solutions/editProject/<%= p.id %>">Edit</a>
+                <a class="btn btn-sm btn-error" href="/solutions/deleteProject/<%= p.id %>">Delete</a>
               </td>
             </tr>
           <% }) %>
